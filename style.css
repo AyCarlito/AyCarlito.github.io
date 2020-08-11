@@ -52,42 +52,44 @@ body {
 }
 
 .project {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-template-rows: 200px 200px 100px;
+    grid-template-areas: "image" "info" "technologies";
+
     width: 360px;
     height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 20px;
-
     transition: 0.5s ease;
     text-align: center;
-}
-
-project:hover {
-    transform: scale(1.15);
+    border-radius: 20px;
 }
 
 .project_image {
+    grid-area: image;
     margin-top: 0em;
-}
-
-.project_image img{
-    margin-top: 0em;
-    width: 100%;
-    height: auto;
+    background-image: url("images/black.png");
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.project_image:hover {
-    filter:blur(4px)
-}
-
 .project_technologies {
-    display: flex;
-    justify-content: space-evenly;
+    grid-area: technologies;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
     background-color: #0dc5a0;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+
 }
+
+.project:hover {
+    transform: scale(1.15);
+}
+
 
 footer{
     margin-top: 10em;
