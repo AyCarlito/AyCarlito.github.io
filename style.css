@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+.main h{
+    font-size: 1.5em;
+}
+
 .main p{
     max-width: 50em;
     text-align: center;
