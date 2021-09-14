@@ -18,9 +18,9 @@
    text-decoration: none;
    color: #000;
    transition: color 0.3s ease;
-   padding-right: 1rem;
+   padding: 0.25em;
+   font-size: 1.4rem;
  }
- 
  
  
  #menuToggle input{
@@ -86,7 +86,7 @@
  #menu{
    position: absolute;
    width: 300px;
-   margin: -2.2rem 0 0 0.89rem;
+   margin: -2.2rem 0 0 0.60rem;
    
    background: transparent;
    list-style-type: none;
@@ -100,7 +100,6 @@
  
  #menu li{
    padding-right: 2.5rem;
-   font-size: 22px;
  }
  
  #menuToggle input:checked ~ ul{
