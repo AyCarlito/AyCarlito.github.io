@@ -5,94 +5,89 @@ html{
 html, body {
     padding: 0;
     margin: 0;
-  }
-
-body{
-    font-weight: 500;
-    font-size: 1.4rem;
     font-family: Questrial;
-}
-
-.header{
-    padding: 3rem 2.4rem;
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-    z-index: 50;
-}
+  }
 
 .top_background{
     background-color: #cad3f0;
     padding-bottom: 1rem;
 }
 
-.header_links{
-    background-color: transparent;
-    position: relative;
-    right: auto;
-    left: auto;
-    top: auto;
-    font-size: 0;
-}
-
-.header_links ul{
-    left: auto;
-    max-width: none;
-    position: relative;
-    top: auto;
-
-}
-
-.header_links li{
-    display: inline-block;
-}
-
-.header_links__link{
-    display: inline-block;
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    line-height: 3.6rem;
-    margin-left: 2.5rem;
-    text-decoration: none;
-    color:  #282a2d;
-}
-
-.home{
-    padding-top: 12.5rem;
-}
-
-.hero__content{
+.content{
+    padding-top: 5rem;
     position: initial;
-    color: #fff;
     text-align: center;
 }
 
-.wrap{
+.typewriter-wrap{
     margin-left: auto;
     margin-right: auto;
-    max-width: 60rem;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1, h2{
-    letter-spacing: -0.02rem;
-    max-width: none;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
+/* Typewriter code sourced from 
+https://codepen.io/denic/pen/GRoOxbM
+*/
 
-.home h1{
-    font-size: 5.5rem;
-    line-height: 1.16;
+.typewriter-wrap .typewriter{
+    width: 10.6ch;
+    animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 5.75em;
     font-weight: 1000;
 }
 
-.home h2{
-    font-size: 2rem;
-    font-weight: 500;
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.typewriter-wrap .typewriter, .description-wrap .description{
+    line-height: 1.16;
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+}
+
+.description-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+}
+
+.description-wrap .description{
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .description-wrap{
+        max-width: 22.5rem;
+    }
+    .typewriter-wrap .typewriter{
+        font-size: 3.25rem;
+    }
+    .description-wrap .description{
+        font-size: 1.35rem;
+    }
+    img{
+        max-width: 75%;
+    }
+
+}
+.top-image-container, .middle-image-container, .bottom-image-container{
+    width: 100%;
+    overflow: hidden;
 }
 
 .top-image-container{
@@ -106,7 +101,6 @@ h1, h2{
     display: flex;
     justify-content: center;
 }
-
 
 .bottom-image-container{
     background-color: #f0f1f6;
