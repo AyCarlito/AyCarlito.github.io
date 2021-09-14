@@ -13,60 +13,17 @@ body{
     font-family: Questrial;
 }
 
-.header{
-    padding: 3rem 2.4rem;
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    justify-content: space-between;
-    z-index: 50;
-}
-
 .top_background{
     background-color: #cad3f0;
     padding-bottom: 1rem;
 }
 
-.header_links{
-    background-color: transparent;
-    position: relative;
-    right: auto;
-    left: auto;
-    top: auto;
-    font-size: 0;
-}
-
-.header_links ul{
-    left: auto;
-    max-width: none;
-    position: relative;
-    top: auto;
-
-}
-
-.header_links li{
-    display: inline-block;
-}
-
-.header_links__link{
-    display: inline-block;
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    line-height: 3.6rem;
-    margin-left: 2.5rem;
-    text-decoration: none;
-    color:  #282a2d;
-}
-
 .home{
-    padding-top: 12.5rem;
+    padding-top: 5rem;
 }
 
-.hero__content{
+.content{
     position: initial;
-    color: #fff;
     text-align: center;
 }
 
@@ -85,14 +42,35 @@ h1, h2{
 }
 
 .home h1{
-    font-size: 5.5rem;
+    font-size: 5.75rem;
     line-height: 1.16;
     font-weight: 1000;
+    color: #000;
 }
 
 .home h2{
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 500;
+    color: #2a272a;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrap{
+        max-width: 20rem;
+    }
+    .home h1 {
+        font-size: 3.25rem;
+    }
+    .home h2 {
+        font-size: 1.35rem;
+
+    }
+}
+
+
+.top-image-container, .middle-image-container, .bottom-image-container{
+    width: 100%;
+    overflow: hidden;
 }
 
 .top-image-container{
